@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor-header {
+  width: 100%;
+
+  display: grid;
+  gap: 10px;
+}
+
+.title-logo i {
+  text-align: center;
+  border: solid 2px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 8px 0;
+  margin: 5px 18px;
+}
+.logo-title {
+  margin: 0 10px;
+  font-size: 16px;
+}
+.btn-menu {
+  margin-left: 290px;
+  margin-top: -50px;
+  font-size: 25px;
+}
+.menu-link {
+  display: none;
+}
+@media (min-width: 900px) {
+  .title-logo {
+    width: 50%;
+    margin-left: 25px;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .menu-link {
+    display: flex;
+    justify-content: center;
+    margin-left: 480px;
+    margin-top: -50px;
+  }
+  .menu a {
+    text-decoration: none;
+    padding: 20px;
+    font-family: "roboto";
+    color: #141414;
+  }
+}
+
+.welcome-pagina {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+.title-welcome {
+  font-family: "Open Sans", sans-serif;
+  font-size: 39px;
+  text-align: center;
+}
+.img-welcome {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+@media (min-width: 900px) {
+  .welcome-pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .title-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-welcome {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+} /*--- Seccion Servicios ----*/
+.section-introduccion {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  color: #fafafa;
+}
+.section {
+  display: grid;
+  gap: 20px;
+}
+.title-section {
+  font-size: 39px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.parrafo-section {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.icono-section {
+  color: #ffd953;
+  text-align: center;
+  font-size: 42px;
+  margin: 10px;
+}
+@media (min-width: 900px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .title-section {
+    width: 100%;
+    height: 100px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+    margin-left: 60px;
+  }
+  .parrafo-section {
+    height: 100px;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    margin-top: 70px;
+    padding: 15px;
+    text-align: left;
+  }
+  .icono-section {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 190px;
+    margin-left: 80px;
+  }
+}
+
+/*--- Mis Servicios ---*/
+
+.section-servicios {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 45px;
+}
+.title-servicios {
+  height: 50px;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.servicios {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.title-sub-servicios {
+  font-size: 24px;
+  margin: 15px;
+}
+.parrafo-servicios {
+  font-size: 16px;
+  color: black;
+  margin: 20px;
+}
+.icon-servicios {
+  font-size: 80px;
+}
+
+@media (min-width: 900px) {
+  .section-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .title-servicios {
+    grid-column: 1 / span 4;
+  }
+  .servicios {
+    grid-row: 2 / span 4;
+  }
+} /*--- Formulario ---*/
+.section-formulario {
+  background-color: #141414;
+  padding: 0 38px;
+  height: 100vh;
+}
+.title-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #fafafa;
+  padding: 50px 40px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1f 1fr 1fr 1fr;
+  gap: 20px;
+}
+.label {
+  color: #fafafa;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.nombre-formulario input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.email input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.mensaje textarea {
+  display: block;
+  width: 100%;
+}
+.btn-enviar {
+  width: 100%;
+  background-color: #ffd953;
+  padding: 10px;
+  font-size: 16px;
+}
+@media (min-width: 900px) {
+  .section-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-form {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*--- Footer ---*/
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #dbdbdb;
+}
+.logo-footer_copy {
+  padding: 80px 25px 18px 0;
+}
+.copy {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+}
+.footer-redes {
+  display: grid;
+  gap: 20px;
+}
+.redes {
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+}
+.incon-redes {
+  font-size: 24px;
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+@media (min-width: 900px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-redes {
+    margin-left: 600px;
+    padding: 30px;
+  }
+}
