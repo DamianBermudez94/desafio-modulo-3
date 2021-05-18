@@ -194,13 +194,14 @@
   font-size: 22px;
   font-family: "Open Sans", sans-serif;
   color: #fafafa;
-  padding: 50px 40px;
+  padding: 30px;
 }
 .form {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1f 1fr 1fr 1fr;
   gap: 20px;
-  min-width: 335px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 .label {
   color: #fafafa;
@@ -209,20 +210,18 @@
   font-size: 14px;
   margin: 10px 0;
 }
-.nombre-formulario input {
-  display: block;
 
-  padding: 10px;
-}
-.email input {
+.input-text,
+.textarea {
   display: block;
-
+  width: 100%;
   padding: 10px;
 }
 .mensaje textarea {
-  display: block;
+  min-height: 200px;
 }
 .btn-enviar {
+  width: 100%;
   background-color: #ffd953;
   padding: 10px;
   font-size: 16px;
@@ -235,10 +234,9 @@
   }
   .title-form {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .form {
-    min-width: 376px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 250px;
+    margin-bottom: 100px;
   }
 }
 
