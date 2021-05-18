@@ -211,17 +211,16 @@
 }
 .nombre-formulario input {
   display: block;
-  width: 100%;
+
   padding: 10px;
 }
 .email input {
   display: block;
-  width: 100%;
+
   padding: 10px;
 }
 .mensaje textarea {
   display: block;
-  width: 100%;
 }
 .btn-enviar {
   width: 100%;
